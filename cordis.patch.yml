@@ -1,0 +1,5 @@
+# 刷题模式 bundle patch：插入 Host 半（Client 半由 dsh.client 声明加载）。
+- insert:
+    - id: practice-mode
+      name: 'dsh-practice-mode'
+      config: {}

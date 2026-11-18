@@ -1,0 +1,53 @@
+{
+  "name": "dsh-practice-mode",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "刷题模式：课程文档、题库解析、答题记录、课程与全局刷题看板，以及右侧答疑对话。",
+  "license": "MIT",
+  "author": "Ethan Guan (https://github.com/Ethan-Guan)",
+  "homepage": "https://github.com/Ethan-Guan/dsh-practice-mode#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethan-Guan/dsh-practice-mode.git"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "practice",
+    "quiz",
+    "education"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/host",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}

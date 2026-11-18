@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Practice Mode">
+  <rect x="6" y="10" width="52" height="44" rx="10" fill="#e8f1fb" stroke="#247bbf" stroke-width="2.5"/>
+  <path d="M16 22h20M16 30h14" stroke="#247bbf" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M17 42.5l4.2 4.2L29 39" fill="none" stroke="#1f9d6a" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36 39h12M36 46h8" stroke="#247bbf" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="48" cy="20" r="6.5" fill="#247bbf"/>
+  <path d="M48 16.8v6.4M44.8 20h6.4" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+</svg>
